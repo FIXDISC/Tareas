@@ -1,0 +1,33 @@
+.x{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    color: #000;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    font-weight: bolder;
+}
+
+.x:hover{
+    display: inline-block;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    color: #FFF;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    font-weight: bolder;
+    background-color: crimson;
+}
+
+.txt{
+    float: left;
+}
+
+.items{
+    height: 40px;
+}
