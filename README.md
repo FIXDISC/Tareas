@@ -2,7 +2,7 @@
 
 Screenshot
 
-![alt text](public/img/img.png)
+![Screenshot](public/img/ref.png)
 
 ## Scripts Disponibles
 
