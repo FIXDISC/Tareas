@@ -4,13 +4,18 @@ import './ListaTareas.css'
 import {deleteTarea} from '../../actions'
 
 const ListaTareas = (props) => {
+
     return (
-        <div className="collection-item">
+        <div >
             {props.tareas.map((tarea,index) => {
                 return( 
-                <div key={'div'+index} className="collection-item items">
-                    <div key={tarea.id} className="txt">{tarea.descripcion}</div>
+                <div className="items" key={'div'+index} >
+                    <div key={tarea.id} className="txt">
+                        {tarea.descripcion}
+                    </div>
                     <div key={index} className="x" onClick={()=>props.dispatch(deleteTarea(tarea.id))}>X</div>
+                    <div key={index} className="o" onClick={()=>props.dispatch(deleteTarea(tarea.id))}>MOD</div>
+                    
                 </div>
                 )
 
