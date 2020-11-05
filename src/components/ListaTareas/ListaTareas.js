@@ -9,7 +9,7 @@ const ListaTareas = (props) => {
             {props.tareas.map((tarea,index) => {
                 return( 
                 <div key={'div'+index} className="collection-item items">
-                    <div key={tarea.id}>{tarea.descripcion}</div>
+                    <div key={tarea.id} className="txt">{tarea.descripcion}</div>
                     <div key={index} className="x" onClick={()=>props.dispatch(deleteTarea(tarea.id))}>X</div>
                 </div>
                 )
