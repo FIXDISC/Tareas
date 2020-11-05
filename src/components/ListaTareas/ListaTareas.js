@@ -9,7 +9,7 @@ const ListaTareas = (props) => {
         <div >
             {props.tareas.map((tarea,index) => {
                 return( 
-                <div className="items" key={'div'+index} >
+                <div className="collection-item items" key={'div'+index}  >
                     <div key={tarea.id} className="txt">
                         {tarea.descripcion}
                     </div>
